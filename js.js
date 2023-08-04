@@ -6,17 +6,17 @@ let lluvecita = "LLOVIENDO";
 
 
 function Ingreso() {
-    let ingreso = document.querySelector("#respuesta").value.toString();
+    let ingreso = document.querySelector("#respuesta").value;
 
-    if (ingreso.toUpperCase().trim() == solcito) {
+    if (typeof ingreso === "string" && ingreso.trim().toUpperCase() === solcito) {
         soleado();
-    } else if (ingreso.toUpperCase().trim() == nubecita) {
+    } else if (typeof ingreso === "string" && ingreso.trim().toUpperCase() === nubecita) {
         nublado();
-    } else if (ingreso.toUpperCase().trim() == lluvecita) {
+    } else if (typeof ingreso === "string" && ingreso.trim().toUpperCase() === lluvecita) {
         lluvioso();
     } else {
-        error.style.display = "block"
-        error.innerHTML = "Por favor ingrese una de las opciones que estan dentro del parentesis";
+        error.style.display = "block";
+        error.innerHTML = "Por favor ingrese una de las opciones que están dentro del paréntesis";
     }
 }
 
