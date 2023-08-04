@@ -8,11 +8,11 @@ let lluvecita = "LLOVIENDO";
 function Ingreso() {
     let ingreso = document.querySelector("#respuesta").value.toString();
 
-    if (ingreso.toUpperCase() == solcito) {
+    if (ingreso.toUpperCase().trim() == solcito) {
         soleado();
-    } else if (ingreso.toUpperCase() == nubecita) {
+    } else if (ingreso.toUpperCase().trim() == nubecita) {
         nublado();
-    } else if (ingreso.toUpperCase() == lluvecita) {
+    } else if (ingreso.toUpperCase().trim() == lluvecita) {
         lluvioso();
     } else {
         error.style.display = "block"
