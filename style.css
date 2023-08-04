@@ -1,12 +1,13 @@
-body{
+body {
     background-color: #74a4bc;
 }
 
-h1{
+h1 {
     margin-top: 5%;
 }
 
-form, #caja{
+form,
+#caja {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 65%;
     background-color: #b6d6cc;
@@ -15,12 +16,14 @@ form, #caja{
     border: 2px solid #29339bab;
     text-align: center;
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 10%;
     flex-direction: column;
     height: 320px;
 }
 
-form input{
+form input {
     padding: 1.5%;
     width: 60%;
     margin: auto;
@@ -29,8 +32,8 @@ form input{
     border: none;
 }
 
-button{
-    background-color:#29339B;
+button {
+    background-color: #29339B;
     display: inline-block;
     border: none;
     padding: 10px;
@@ -42,28 +45,58 @@ button{
     font-weight: 700;
 }
 
-button:hover{
+button:hover {
     background-color: #29339ba1;
     cursor: pointer;
 }
 
 .error {
     color: red;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 100%;
     margin: 1%;
     padding-bottom: 1%;
 }
 
-img{
+img {
     margin-top: 5%;
-    margin-left: 42%;
     width: 15%;
 }
 
-h3{
+h3 {
     font-family: 'Bungee Spice', cursive;
     font-size: 200%;
     line-height: 1px;
     text-align: center;
+}
+
+@media (max-width: 767px) {
+    form,
+    #caja{
+        margin-top: 70%;
+        width: 80%;
+        height: 60%;
+    }
+
+    h1{
+        font-size: 180%;
+        margin-top: 20%;
+    }
+
+    #respuesta{
+        margin-top: 8%;
+        padding: 3%;
+    }
+
+    button{
+        margin-top: 10%;
+    }
+
+    img{
+        width: 40%;
+    }
+
+    h3{
+        font-size: 120%;
+    }
 }
