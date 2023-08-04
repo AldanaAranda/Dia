@@ -3,6 +3,19 @@ let contenedor = document.querySelector("#main");
 let solcito = "SOLEADO";
 let nubecita = "NUBLADO";
 let lluvecita = "LLOVIENDO";
+const input = document.querySelector("#respuesta");
+const boton = document.querySelector("#boton");
+
+input.addEventListener('keypress', function(e) {
+  // verificar si la tecla presionada es la tecla Enter
+  const key = e.which || e.keyCode;
+  if (key === 13) {
+    // cancelar el comportamiento predeterminado del formulario
+    e.preventDefault();
+    // hacer clic en el botón submit
+    boton.click();
+  }
+});
 
 
 function Ingreso() {
